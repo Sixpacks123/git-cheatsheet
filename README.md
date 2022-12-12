@@ -124,7 +124,32 @@ git merge
 ```
 
 ## Stash
+>Pour changer de branche sans valider dans la branche actuelle, stockez les données non validées en toute sécurité
 
+Enregistre l'état du travail et de l'index
+```bash
+git stash 
+```
+Donner un message pendant l'enregistrement
+```bash
+git stash save <message> 
+```
+Afficher la liste du contenu stocké
+```bash
+git stash list
+```
+Valider les modifications stockées. Pour appliquer les modifications d'un stash spécifique, utilisez l'identifiant de l'index de stash avec apply
+```bash
+git stash apply
+```
+Afficher le contenu des fichiers cachés
+```bash
+git stash show 
+```
+Supprime la réserve la plus récente de la file d'attente
+```bash
+git stash drop 
+```
 ## Compare 
 
 ## Releases & Tag 
