@@ -25,6 +25,11 @@ Afficher les modifications entre les commits, un commit et l’arbre de travail,
 ```BASH
 git diff
 ```
+Envoyer toutes les modifications locales 
+```BASH
+git commit -a
+```
+
 ## Reset
 
 ## Update & Delete
