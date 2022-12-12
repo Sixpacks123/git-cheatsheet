@@ -67,10 +67,6 @@ Bascule sur la branche spécifiée et met à jour le répertoire de travail
 ```bash
 git checkout [nom-de-branche]
 ```
-Combine dans la branche courante l'historique de la branche spécifiée
-```bash
-git merge [nom-de-branche]
-```
 Supprime la branche spécifiée
 
 ```bash
@@ -80,8 +76,6 @@ git branch -d [nom-de-branche]
 ## Merge
 
 ## Stash
-
-## Log
 
 ## Compare 
 
