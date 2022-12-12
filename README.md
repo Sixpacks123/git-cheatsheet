@@ -184,6 +184,23 @@ git remote remove <remote url/short name>
 ```
 ## Compare 
 
-## Releases & Tag 
+## Tag
+>Des références conviviales sont utilisées pour indiquer des jalons ou des points de référence dans le code
 
+Créer une balise avec le nom donné
+```bash
+git tag <tag_name>
+```
+Répertorier toutes les balises disponibles
+```bash
+git tag 
+```
+Afficher les détails de la balise spécifiée
+```bash
+git tag show <tag_name>
+```
+Affiche les balises qui correspondent au modèle ou aux caractères spécifiés
+```bash
+git tag -l “.*”
+```
 ## Colaborate 
