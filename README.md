@@ -85,11 +85,9 @@ Affiche les détails du dernier commit sur la branche
 ```bash
 git show
 ```
-
 Permet d'afficher les commandes que l'on peut réaliser avec git
 ```bash
 git help
-
 
 ## Reset
 Revenir à un commit précédent et annuler les modifications apportées après ce commit
