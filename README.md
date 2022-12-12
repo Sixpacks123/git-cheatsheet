@@ -37,7 +37,10 @@ Charger le contenu d'un dépôt local vers un dépôt distant
 ```BASH
 git push
 ```
-
+Rapatrier et intégrer un autre dépôt ou une branche locale
+```BASH
+git pull
+```
 
 ## Reset
 
