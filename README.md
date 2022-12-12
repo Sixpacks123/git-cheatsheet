@@ -90,7 +90,7 @@ Permet d'afficher les commandes que l'on peut réaliser avec git
 git help
 ```
 ## Reset
-Réinitialiser la HEAD actuelle à l'état spécifié
+Revenir à un commit précédent et annuler les modifications apportées après ce commit
 ```bash
 git reset 
 ```
