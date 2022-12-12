@@ -235,4 +235,10 @@ Affiche les balises qui correspondent au modèle ou aux caractères spécifiés
 ```bash
 git tag -l “.*”
 ```
+
+```mermaid
+ gitGraph
+       commit
+       commit id: "Normal" tag: "v1.0.0"
+````
 ## Colaborate 
