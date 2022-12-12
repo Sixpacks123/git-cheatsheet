@@ -17,7 +17,10 @@ Afficher l'état du répertoire de travail et de la zone de staging
 ```BASH
 git status
 ```
-
+Ajouter tous les changements pour le prochain commit
+```BASH
+git add .
+```
 ## Reset
 
 ## Update & Delete
