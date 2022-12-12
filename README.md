@@ -200,6 +200,26 @@ Pour ignorer toute modification :
 git rebase --skip
 ```
 
+>Intègre tous les fichiers de développement dans une seule branche, combine deux branches et fusionne plusieurs commits en un seul historique. La fusion s'arrête en cas de conflit et git présente les fichiers en conflit. Une fois les conflits résolus, la fusion se poursuit.
+
+D'abord, vérifiez la branche à fusionner
+```bash
+git checkout -b 
+```
+Ajouter et valider les fichiers
+```
+git add <file>
+
+git commit
+
+git checkout main
+```
+
+Fusionner la branche avec master
+```
+git merge 
+```
+
 ## Rebase
 
 >Commit de base final. Utile avant de fusionner toutes les modifications, pour valider les modifications des différentes branches une par une (linéairement).
