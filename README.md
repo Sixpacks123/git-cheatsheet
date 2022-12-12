@@ -72,6 +72,11 @@ Montrer tous les commits, en commençant par le plus récent
 ```bash
 git log
 ```
+Affiche les détails du dernier commit sur la branche
+```bash
+git show
+```
+
 ## Reset
 Réinitialiser la HEAD actuelle à l'état spécifié
 ```bash
