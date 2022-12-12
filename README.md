@@ -21,6 +21,10 @@ Ajouter tous les changements pour le prochain commit
 ```BASH
 git add .
 ```
+Afficher les modifications entre les commits, un commit et l’arbre de travail, etc
+```BASH
+git diff
+```
 ## Reset
 
 ## Update & Delete
