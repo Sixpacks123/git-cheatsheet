@@ -29,6 +29,10 @@ Envoyer toutes les modifications locales
 ```BASH
 git commit -a
 ```
+Envoyer les modifications récentes
+```BASH
+git commit
+```
 
 ## Reset
 
