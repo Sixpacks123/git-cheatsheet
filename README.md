@@ -200,6 +200,23 @@ Pour ignorer toute modification :
 git rebase --skip
 ```
 
+## Rebase
+
+>Commit de base final. Utile avant de fusionner toutes les modifications, pour valider les modifications des différentes branches une par une (linéairement).
+
+Combiner les commits en une base finale
+```bash
+git rebase <branch name>
+```
+S'il y a des conflits, résolvez-les et continuez le rebasage :
+```bash
+git rebase --continue
+```
+Pour ignorer toute modification :
+```bash
+git rebase --skip
+```
+
 ## Stash
 >Pour changer de branche sans valider dans la branche actuelle, stockez les données non validées en toute sécurité
 
