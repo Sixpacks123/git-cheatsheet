@@ -6,43 +6,47 @@
 ## Global Settings
 ## Commande de base
 Créer un nouveau répertoire local
-```BASH
+```bash
 git init
 ```
 Cloner un répertoire
-```BASH
+```bash
 git clone https://github.com/Sixpacks123/git-cheatsheet.git
 ```
 Afficher l'état du répertoire de travail et de la zone de staging
-```BASH
+```bash
 git status
 ```
 Ajouter tous les changements pour le prochain commit
-```BASH
+```bash
 git add .
 ```
 Afficher les modifications entre les commits, un commit et l’arbre de travail, etc
-```BASH
+```bash
 git diff
 ```
 Envoyer toutes les modifications locales 
-```BASH
+```bash
 git commit -a
 ```
 Envoyer les modifications récentes
-```BASH
+```bash
 git commit
 ```
 Charger le contenu d'un dépôt local vers un dépôt distant
-```BASH
+```bash
 git push
 ```
 Rapatrier et intégrer un autre dépôt ou une branche locale
-```BASH
+```bash
 git pull
 ```
 
 ## Reset
+Réinitialiser la HEAD actuelle à l'état spécifié
+```bash
+git reset 
+```
 
 ## Update & Delete
 
