@@ -1,9 +1,36 @@
  # <center> Git-cheatsheet</center>
 
-## Sommaire 
+Git est un logiciel de gestion de versions décentralisé. C'est un logiciel libre et gratuit, créé en 2005 par Linus Torvalds, auteur du noyau Linux, et distribué selon les termes de la licence publique générale GNU version 2. Le principal contributeur actuel de Git, et ce depuis plus de 16 ans, est Junio C Hamano.
+
+# Sommaire 
 
 
-## Global Settings
+# Configuration
+GitHub fournit des clients desktop qui incluent une interface
+graphique pour les manipulations les plus courantes et une "an
+automatically updating command line edition of Git" pour les scénari
+avancés.
+
+ |
+GitHub pour [Mac](https://mac.github.com) |
+Git pour toutes les [plate-formes](http://git-scm.com)
+
+
+Définit le nom que vous voulez associer à toutes vos opérations de
+commit
+```bash
+git config --global user.name "[nom]"
+```
+Définit l'email que vous voulez associer à toutes vos opérations de commit
+
+```bash
+git config --global user.email "[adresse email]"
+```
+Active la colorisation de la  en ligne de commande
+
+```bash
+git config --global color.ui auto
+```
 ## Commande de base
 Créer un nouveau répertoire local
 ```bash
@@ -54,6 +81,25 @@ git reset
 ## Update & Delete
 
 ## Branch
+Liste toutes les branches locales dans le dépôt courant
+```bash
+git branch
+```
+Crée une nouvelle branche
+
+```bash
+git branch [nom-de-branche]
+```
+Bascule sur la branche spécifiée et met à jour le répertoire de travail
+
+```bash
+git checkout [nom-de-branche]
+```
+Supprime la branche spécifiée
+
+```bash
+git branch -d [nom-de-branche]
+```
 
 ## Merge
 >Intègre tous les fichiers de développement dans une seule branche, combine deux branches et fusionne plusieurs commits en un seul historique. La fusion s'arrête en cas de conflit et git présente les fichiers en conflit. Une fois les conflits résolus, la fusion se poursuit.
@@ -78,9 +124,32 @@ git merge
 ```
 
 ## Stash
+>Pour changer de branche sans valider dans la branche actuelle, stockez les données non validées en toute sécurité
 
-## Log
-
+Enregistre l'état du travail et de l'index
+```bash
+git stash 
+```
+Donner un message pendant l'enregistrement
+```bash
+git stash save <message> 
+```
+Afficher la liste du contenu stocké
+```bash
+git stash list
+```
+Valider les modifications stockées. Pour appliquer les modifications d'un stash spécifique, utilisez l'identifiant de l'index de stash avec apply
+```bash
+git stash apply
+```
+Afficher le contenu des fichiers cachés
+```bash
+git stash show 
+```
+Supprime la réserve la plus récente de la file d'attente
+```bash
+git stash drop 
+```
 ## Compare 
 
 ## Releases & Tag 
