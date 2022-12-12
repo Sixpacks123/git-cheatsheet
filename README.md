@@ -104,21 +104,21 @@ git branch -d [nom-de-branche]
 ## Merge
 >Intègre tous les fichiers de développement dans une seule branche, combine deux branches et fusionne plusieurs commits en un seul historique. La fusion s'arrête en cas de conflit et git présente les fichiers en conflit. Une fois les conflits résolus, la fusion se poursuit.
 
-- d'abord, vérifiez la branche à fusionner
+D'abord, vérifiez la branche à fusionner
 ```bash
 git checkout -b
 ```
 ```bash
 git add <file>
 ```
-- ajouter et valider les fichiers
+Ajouter et valider les fichiers
 ```bash
 git commit
 ```
 ```bash
 git checkout master
 ```
-- fusionner la branche avec master
+Fusionner la branche avec master
 ```bash
 git merge
 ```
@@ -149,6 +149,27 @@ git stash show
 Supprime la réserve la plus récente de la file d'attente
 ```bash
 git stash drop 
+```
+
+## Remote
+
+>Vérifie la configuration du serveur distant et autorise l'accès à la connexion entre distant et local.
+
+Par défaut, il renvoie 'origin', le nom par défaut du serveur distant donné par Git
+```bash
+git remote
+```
+Répertorie les noms courts et les URL de toutes les connexions à distance disponibles
+```bash
+git remote -v
+```
+Ajouter explicitement le serveur distant aux connexions disponibles. Le nom court peut être utilisé pour les commandes git au lieu de donner l'URL entière.
+```bash
+git remote add <short name> <remote url>
+```
+Supprime le serveur distant du référentiel
+```bash
+git remote remove <remote url/short name>
 ```
 ## Compare 
 
