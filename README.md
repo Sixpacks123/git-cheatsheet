@@ -41,7 +41,10 @@ Rapatrier et intégrer un autre dépôt ou une branche locale
 ```bash
 git pull
 ```
-
+Montrer tous les commits, en commençant par le plus récent
+```bash
+git log
+```
 ## Reset
 Réinitialiser la HEAD actuelle à l'état spécifié
 ```bash
