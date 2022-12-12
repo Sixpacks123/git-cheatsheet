@@ -48,7 +48,35 @@ Ajouter tous les changements pour le prochain commit
 ```bash
 git add .
 ```
+Afficher les modifications entre les commits, un commit et l’arbre de travail, etc
+```bash
+git diff
+```
+Envoyer toutes les modifications locales 
+```bash
+git commit -a
+```
+Envoyer les modifications récentes
+```bash
+git commit
+```
+Charger le contenu d'un dépôt local vers un dépôt distant
+```bash
+git push
+```
+Rapatrier et intégrer un autre dépôt ou une branche locale
+```bash
+git pull
+```
+Montrer tous les commits, en commençant par le plus récent
+```bash
+git log
+```
 ## Reset
+Réinitialiser la HEAD actuelle à l'état spécifié
+```bash
+git reset 
+```
 
 ## Update & Delete
 
