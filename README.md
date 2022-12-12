@@ -149,11 +149,24 @@ git commit
 git checkout main
 ```
 
-Fusionner la branche avec master
+Fusionner la branche avec main
 ```
 git merge 
 ```
 
+```mermaid
+ gitGraph
+       commit
+       commit
+       branch develop
+       checkout develop
+       commit
+       commit
+       checkout main
+       merge develop
+       commit
+       commit
+````
 ## Rebase
 
 >Commit de base final. Utile avant de fusionner toutes les modifications, pour valider les modifications des différentes branches une par une (linéairement).
