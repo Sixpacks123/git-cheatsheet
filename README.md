@@ -113,25 +113,55 @@ git branch -d [nom-de-branche]
 ```
 
 ## Merge
+
 >Intègre tous les fichiers de développement dans une seule branche, combine deux branches et fusionne plusieurs commits en un seul historique. La fusion s'arrête en cas de conflit et git présente les fichiers en conflit. Une fois les conflits résolus, la fusion se poursuit.
 
 D'abord, vérifiez la branche à fusionner
 ```bash
-git checkout -b
-```
-```bash
-git add <file>
+git checkout -b 
 ```
 Ajouter et valider les fichiers
-```bash
+```
+git add <file>
+
 git commit
+
+git checkout main
 ```
-```bash
-git checkout master
+
+Fusionner la branche avec main
 ```
-Fusionner la branche avec master
+git merge 
+```
+
+```mermaid
+ gitGraph
+       commit
+       commit
+       branch develop
+       checkout develop
+       commit
+       commit
+       checkout main
+       merge develop
+       commit
+       commit
+````
+## Rebase
+
+>Commit de base final. Utile avant de fusionner toutes les modifications, pour valider les modifications des différentes branches une par une (linéairement).
+
+Combiner les commits en une base finale
 ```bash
-git merge
+git rebase <branch name>
+```
+S'il y a des conflits, résolvez-les et continuez le rebasage :
+```bash
+git rebase --continue
+```
+Pour ignorer toute modification :
+```bash
+git rebase --skip
 ```
 
 ## Stash
@@ -182,8 +212,45 @@ Supprime le serveur distant du référentiel
 ```bash
 git remote remove <remote url/short name>
 ```
-## Compare 
 
-## Releases & Tag 
+## Remote
 
+>Vérifie la configuration du serveur distant et autorise l'accès à la connexion entre distant et local.
+
+Par défaut, il renvoie 'origin', le nom par défaut du serveur distant donné par Git
+```bash
+git remote
+```
+Répertorie les noms courts et les URL de toutes les connexions à distance disponibles
+```bash
+git remote -v
+```
+Ajouter explicitement le serveur distant aux connexions disponibles. Le nom court peut être utilisé pour les commandes git au lieu de donner l'URL entière.
+```bash
+git remote add <short name> <remote url>
+```
+Supprime le serveur distant du référentiel
+```bash
+git remote remove <remote url/short name>
+```
+
+## Tag
+>Des références conviviales sont utilisées pour indiquer des jalons ou des points de référence dans le code
+
+Créer une balise avec le nom donné
+```bash
+git tag <tag_name>
+```
+Répertorier toutes les balises disponibles
+```bash
+git tag 
+```
+Afficher les détails de la balise spécifiée
+```bash
+git tag show <tag_name>
+```
+Affiche les balises qui correspondent au modèle ou aux caractères spécifiés
+```bash
+git tag -l “.*”
+```
 ## Colaborate 
