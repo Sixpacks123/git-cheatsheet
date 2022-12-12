@@ -5,7 +5,17 @@ Git est un logiciel de gestion de versions décentralisé. C'est un logiciel lib
 # Sommaire 
 
 
-# Global Settings
+# Configuration
+GitHub fournit des clients desktop qui incluent une interface
+graphique pour les manipulations les plus courantes et une "an
+automatically updating command line edition of Git" pour les scénari
+avancés.
+
+ |
+GitHub pour [Mac](https://mac.github.com) |
+Git pour toutes les [plate-formes](http://git-scm.com)
+
+
 Définit le nom que vous voulez associer à toutes vos opérations de
 commit
 ```
@@ -43,6 +53,29 @@ git add .
 ## Update & Delete
 
 ## Branch
+Liste toutes les branches locales dans le dépôt courant
+```
+git branch
+```
+Crée une nouvelle branche
+
+```
+git branch [nom-de-branche]
+```
+Bascule sur la branche spécifiée et met à jour le répertoire de travail
+
+```
+git checkout [nom-de-branche]
+```
+Combine dans la branche courante l'historique de la branche spécifiée
+```
+git merge [nom-de-branche]
+```
+Supprime la branche spécifiée
+
+```
+git branch -d [nom-de-branche]
+```
 
 ## Merge
 
