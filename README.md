@@ -8,8 +8,11 @@ Git est un logiciel de gestion de versions décentralisé. C'est un logiciel lib
 - Reset
 - Branch
 - Merge
+- Rebase
 - Stash
 - Remote
+- Tag
+- Colaborate
 
 # Configuration
 GitHub fournit des clients desktop qui incluent une interface
@@ -232,8 +235,6 @@ Supprime le serveur distant du référentiel
 ```bash
 git remote remove <remote url/short name>
 ```
-## Compare 
-=======
 
 ## Tag
 >Des références conviviales sont utilisées pour indiquer des jalons ou des points de référence dans le code
