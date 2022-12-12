@@ -115,7 +115,7 @@ Supprime la branche spécifiée
 git branch -d [nom-de-branche]
 ```
 ```mermaid
-gitGraph
+ gitGraph
     commit
     commit
     branch develop
