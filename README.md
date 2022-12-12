@@ -56,6 +56,26 @@ git reset
 ## Branch
 
 ## Merge
+>Intègre tous les fichiers de développement dans une seule branche, combine deux branches et fusionne plusieurs commits en un seul historique. La fusion s'arrête en cas de conflit et git présente les fichiers en conflit. Une fois les conflits résolus, la fusion se poursuit.
+
+- d'abord, vérifiez la branche à fusionner
+```bash
+git checkout -b
+```
+```bash
+git add <file>
+```
+- ajouter et valider les fichiers
+```bash
+git commit
+```
+```bash
+git checkout master
+```
+- fusionner la branche avec master
+```bash
+git merge
+```
 
 ## Stash
 
