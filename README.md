@@ -33,6 +33,11 @@ Envoyer les modifications récentes
 ```BASH
 git commit
 ```
+Charger le contenu d'un dépôt local vers un dépôt distant
+```BASH
+git push
+```
+
 
 ## Reset
 
