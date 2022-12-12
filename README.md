@@ -18,17 +18,17 @@ Git pour toutes les [plate-formes](http://git-scm.com)
 
 Définit le nom que vous voulez associer à toutes vos opérations de
 commit
-```
+```bash
 git config --global user.name "[nom]"
 ```
 Définit l'email que vous voulez associer à toutes vos opérations de commit
 
-```
+```bash
 git config --global user.email "[adresse email]"
 ```
 Active la colorisation de la  en ligne de commande
 
-```
+```bash
 git config --global color.ui auto
 ```
 ## Commande de base
@@ -82,26 +82,26 @@ git reset
 
 ## Branch
 Liste toutes les branches locales dans le dépôt courant
-```
+```bash
 git branch
 ```
 Crée une nouvelle branche
 
-```
+```bash
 git branch [nom-de-branche]
 ```
 Bascule sur la branche spécifiée et met à jour le répertoire de travail
 
-```
+```bash
 git checkout [nom-de-branche]
 ```
 Combine dans la branche courante l'historique de la branche spécifiée
-```
+```bash
 git merge [nom-de-branche]
 ```
 Supprime la branche spécifiée
 
-```
+```bash
 git branch -d [nom-de-branche]
 ```
 
