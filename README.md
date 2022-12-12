@@ -114,7 +114,19 @@ Supprime la branche spécifiée
 ```bash
 git branch -d [nom-de-branche]
 ```
-
+```mermaid
+gitGraph
+    commit
+    commit
+    branch develop
+    branch develop2
+    checkout develop
+    commit
+    commit
+    checkout develop2
+    commit
+    commit
+```
 ## Merge
 >Intègre tous les fichiers de développement dans une seule branche, combine deux branches et fusionne plusieurs commits en un seul historique. La fusion s'arrête en cas de conflit et git présente les fichiers en conflit. Une fois les conflits résolus, la fusion se poursuit.
 
