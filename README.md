@@ -13,6 +13,10 @@ Cloner un répertoire
 ```BASH
 git clone https://github.com/Sixpacks123/git-cheatsheet.git
 ```
+Afficher l'état du répertoire de travail et de la zone de staging
+```BASH
+git status
+```
 
 ## Reset
 
