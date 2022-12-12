@@ -8,8 +8,11 @@ Git est un logiciel de gestion de versions décentralisé. C'est un logiciel lib
 - Reset
 - Branch
 - Merge
+- Rebase
 - Stash
 - Remote
+- Tag
+- Colaborate
 
 # Configuration
 GitHub fournit des clients desktop qui incluent une interface
@@ -190,27 +193,6 @@ git stash show
 Supprime la réserve la plus récente de la file d'attente
 ```bash
 git stash drop 
-```
-
-## Remote
-
->Vérifie la configuration du serveur distant et autorise l'accès à la connexion entre distant et local.
-
-Par défaut, il renvoie 'origin', le nom par défaut du serveur distant donné par Git
-```bash
-git remote
-```
-Répertorie les noms courts et les URL de toutes les connexions à distance disponibles
-```bash
-git remote -v
-```
-Ajouter explicitement le serveur distant aux connexions disponibles. Le nom court peut être utilisé pour les commandes git au lieu de donner l'URL entière.
-```bash
-git remote add <short name> <remote url>
-```
-Supprime le serveur distant du référentiel
-```bash
-git remote remove <remote url/short name>
 ```
 
 ## Remote
